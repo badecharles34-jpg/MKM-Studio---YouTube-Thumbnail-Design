@@ -1,15 +1,14 @@
-
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Pricing from './pages/Pricing';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import { Page } from './types';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Pricing from './pages/Pricing.tsx';
+import Portfolio from './pages/Portfolio.tsx';
+import Contact from './pages/Contact.tsx';
+import NotFound from './pages/NotFound.tsx';
+import { Page } from './types.ts';
 
 const App: React.FC = () => {
   const [activePage, setActivePage] = useState<Page>('Home');
